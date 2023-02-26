@@ -11,6 +11,17 @@ const Email_pattern=/[a-z0-9]+@[a-z0-9.-]+\.[a-z]{3,}$/
 
 
 submit.addEventListener('click', (e) => {
+    const obj={
+        name: name.value,
+        username: username.value,
+        email: email.value,
+        password: password.value
+    }
+
+    //use the JSON.stringify() method to convert the JavaScript object to JSON format.
+    const data = JSON.stringify(obj)
+    console.log(data)
+
     if (name.value == ""||username.value == ""||email.value == ""||password.value == ""||repeat_password.value == "") {
         alert("some of your data still empty. please ");
     }
@@ -32,5 +43,5 @@ submit.addEventListener('click', (e) => {
     else if (!Email_pattern.test(email.value)){
         alert("Please enter a valid email address.");
     }
-    
+
 })
