@@ -97,6 +97,11 @@ h1 {
     border-color: #2e6da4;
 }
 
+.btn:hover {
+    background-color: #fff;
+    color: #0a0a0a;
+}
+
 a {
     color: #337ab7;
     text-decoration: none;
@@ -108,9 +113,41 @@ p {
     font-size: 15px;
 }
 
-
 .not-remember {
     padding-left: 10%;
     margin-left: 10%;
     padding-top: 0%;
 }
+/*mergeSort*/
+.next {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 54%;
+    padding-top: 10%;
+}
+.btnNext {
+    font-style: italic;
+    font-size: larger;
+}
+/*Palindrom*/
+.string {
+    padding-top: 2%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.palindrom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 35%;
+    padding-top: 20%;
+}
+
+.palin {
+    padding-left: 30%;
+    font-weight: 300;
+    font-size: large;
+}
+

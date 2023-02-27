@@ -1,4 +1,5 @@
 const smallBox = document.getElementById("smallBox");
+const next = document.getElementById("next")
 
 function merge_Arrays(left_sub_array, right_sub_array) {
     let array = []
@@ -28,3 +29,7 @@ var Array = Val.split(" ").map(function(item) {
 smallBox.innerHTML =  merge_sort(Array)
 
 console.log("You entered : " + merge_sort(Array));
+
+next.addEventListener("click",() => {
+   location.replace("palindrom.html")
+})
