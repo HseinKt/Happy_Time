@@ -31,5 +31,5 @@ smallBox.innerHTML =  merge_sort(Array)
 console.log("You entered : " + merge_sort(Array));
 
 next.addEventListener("click",() => {
-   location.replace("palindrom.html")
+   location.replace("palindrome.html")
 })
