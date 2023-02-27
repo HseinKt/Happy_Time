@@ -27,10 +27,9 @@ check.addEventListener("click",() => {
     else {
         palindrom.innerHTML = "Not_Palindrom"
     }
-    // location.replace("palindrom.html")
 })
 
 next.addEventListener("click",() => {
-    location.replace("palindrom.html")
+    location.replace("prime.html")
 })
 
