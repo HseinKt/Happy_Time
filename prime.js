@@ -5,8 +5,9 @@ const string = document.getElementById("string")
 const prime = document.getElementById("prime")
 
 
-function isPrime(n) {
-    for( const i=2 ; i<n-1 ; i++){
+const isPrime = (n) => {
+    if( n == 2 || n == 3) return true
+    for( let i=2 ; i<n-1 ; i++){
         if (n%i == 0){
             return false
             break
@@ -19,7 +20,6 @@ function isPrime(n) {
 
 check.addEventListener("click",() => {
     const p = parseInt(string.value, 10) 
-    console.log(string.value)
     console.log(p)
 
     if( isPrime(p)){
@@ -31,6 +31,5 @@ check.addEventListener("click",() => {
 })
 
 next.addEventListener("click",() => {
-    location.replace("prime.html")
+    location.replace("class.html")
 })
-
