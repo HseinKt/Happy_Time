@@ -4,7 +4,7 @@ const email = document.getElementById("email");
 const course = document.getElementById("course");
 const courseNbr = document.getElementById("courseNbr");
 const submit = document.getElementById("submit");
-
+const next = document.getElementById("next");
 
 console.log(course)
 
@@ -21,8 +21,6 @@ class Course {
     }
 }
 
-
-
 submit.addEventListener('click',() => {
     const N = name.value
     const LN = lastName.value
@@ -31,4 +29,8 @@ submit.addEventListener('click',() => {
     const CN = courseNbr.value
     const c1 = new Course(N,LN,E,C,CN)
     c1.greet()
+})
+
+next.addEventListener("click",() => {
+    location.replace("class.html")
 })

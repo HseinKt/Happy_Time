@@ -124,7 +124,7 @@ p {
     flex-direction: row;
     justify-content: center;
     padding-left: 54%;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 .btnNext {
     font-style: italic;
@@ -151,3 +151,10 @@ p {
     font-size: large;
 }
 
+/*class*/
+.nextClass {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 70%;
+}
